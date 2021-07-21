@@ -5,7 +5,8 @@ import './Statistics.scss';
 const Statistics = ({ title, stats }) => {
   return (
     <section className="statistics">
-      {title.trim() && <h2 className="title">{title.toUpperCase()}</h2>}
+      {title && <h2 className="title">{title.toUpperCase()}</h2>}
+
       <ul className="stat-list">
         {stats.map(stat => {
           const { id, label, percentage } = stat;
